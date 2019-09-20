@@ -26,10 +26,15 @@ const ColorList = ({ colors, updateColors }) => {
 			.catch(error => console.log(error.response));
 
 	};
-
-	const deleteColor = (e, color) => {
-		e.stopPropogation()
-	}
+	//filter allows us to create a new array with all id values that aren't the one just clicked by user
+	const deleteColor = (color) => {
+		axiosWithAuth().delete(`http://localhost:5000/api/colors/${colorToEdit.id}`, colorToEdit)
+			.then(() => {
+				updateColors(colors.filter(({ id }) => id !== color.id))
+				setEditing(false)
+			})
+			.catch(error => console.log(error));
+	};
 
 
 	return (
