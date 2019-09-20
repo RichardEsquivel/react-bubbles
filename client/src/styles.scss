@@ -97,3 +97,15 @@ form {
     margin-top: 16px;
   }
 }
+
+.login-styles {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+
+	button {
+		width: 22.5%;
+	}
+
+}
