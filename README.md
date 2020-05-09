@@ -35,7 +35,7 @@ Make sure that any route that houses data you need to keep secure is protected b
 - [ ] Describe how web servers work.
 Web servers serve web pages and information to other computers or systems when a message is sent. They can house data, take in data, compute things needed sent with that data and respond when complete. We largely access web sites hosted on web servers with URL Domain Names which are converted to IP addresses who's requests are sent out over the web to servers that know how to handle those requests and located the resources needed.
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-PUT is the U in CRUD Create Read Update Delete a PUT request allows us to let a server know once we are properly authenticated if needed that a resources information must be updated or changed. We indicate where the resource is located and secondly we pass in the object with the data to be updated.
+PUT is the U in CRUD Create Read Update Delete a PUT request allows us to let a server know once we are properly authenticated if needed that resources or information must be updated or changed. We indicate where the resource is located and secondly we pass in the object with the data to be updated.
 The DELETE HTTP request method establishes the D in CRUD we utilize this to request data to be deleted.
 
 
@@ -99,4 +99,3 @@ Build a login form to authenticate your users.
 
 - [ ] Look at [Potion JS](https://potion.js.org/). This is the library used to display the color data
 - [ ] Play around with the data visualization happening in `Bubbles.js`. Have fun with this! Try different components from the library, or see if you can add props to change the UI a bit.
-.
